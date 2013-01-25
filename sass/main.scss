@@ -20,7 +20,7 @@ a{
 	color: #008ae2;
 }
 
-.l-wrapper{
+.p-wrapper{
     margin: 0 auto;
     min-height: 100%;
     position: relative;
@@ -184,16 +184,11 @@ a{
 		}
 
 
-/* Content */
-.content{
+/* Layout*/
+.layout{
     overflow: auto;
     padding-bottom: 245px;
 }
-
-	.content__holder{
-		background-color: #FFFFFF;
-		min-height: 80px;
-	}
 
 /* Footer */
 .footer{
