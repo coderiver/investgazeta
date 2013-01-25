@@ -28,11 +28,15 @@ a{
 }
 
 .header{
-	background-color: #FFFFFF;
-    padding: 10px;
-    margin: 11px 0 15px;
+// 	background-color: #FFFFFF;
+//     padding: 10px;
+//     margin: 11px 0 15px;
+    margin: 0 0 15px 0;
 	font-size: $font;
+	padding-top: 10px;
+
 	.header__holder{
+		border: 10px solid #fff;
 	    overflow: hidden;
 	    padding: 0 10px;
 	    position: relative;
@@ -182,7 +186,7 @@ a{
 /* Content */
 .content{
     overflow: auto;
-    padding-bottom: 186px;
+    padding-bottom: 196px;
 }
 
 	.content__holder{
@@ -193,11 +197,12 @@ a{
 /* Footer */
 .footer{
     background: url("../img/bottom-bg.png") repeat-x scroll 50% 50% transparent;
-    clear: both;
+
     height: 186px;
-    margin: -136px auto 50px;
+    margin: -186px auto 0px;
     position: relative;
     font-size: $font;
+    overflow: hidden;
 }
 
 .footer__wrapper{

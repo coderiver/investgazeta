@@ -21,11 +21,11 @@ a {
   width: 971px; }
 
 .header {
-  background-color: #FFFFFF;
-  padding: 10px;
-  margin: 11px 0 15px;
-  font-size: 11px; }
+  margin: 0 0 15px 0;
+  font-size: 11px;
+  padding-top: 10px; }
   .header .header__holder {
+    border: 10px solid #fff;
     overflow: hidden;
     padding: 0 10px;
     position: relative;
@@ -35,6 +35,7 @@ a {
     background-image: -webkit-linear-gradient(#e8e9e9, #fefefe);
     background-image: -moz-linear-gradient(#e8e9e9, #fefefe);
     background-image: -o-linear-gradient(#e8e9e9, #fefefe);
+    background-image: -ms-linear-gradient(#e8e9e9, #fefefe);
     background-image: linear-gradient(#e8e9e9, #fefefe); }
 
 .header__logo-wrap {
@@ -144,8 +145,9 @@ a {
   background-image: -webkit-linear-gradient(#a02018, #c8281e);
   background-image: -moz-linear-gradient(#a02018, #c8281e);
   background-image: -o-linear-gradient(#a02018, #c8281e);
+  background-image: -ms-linear-gradient(#a02018, #c8281e);
   background-image: linear-gradient(#a02018, #c8281e);
-  border: 1px solid #c8281e; }
+  border: 1px solid #C8281E; }
 
 .main__search-menu {
   text-align: right; }
@@ -166,7 +168,7 @@ a {
 /* Content */
 .content {
   overflow: auto;
-  padding-bottom: 186px; }
+  padding-bottom: 196px; }
 
 .content__holder {
   background-color: #FFFFFF;
@@ -175,11 +177,11 @@ a {
 /* Footer */
 .footer {
   background: url("../img/bottom-bg.png") repeat-x scroll 50% 50% transparent;
-  clear: both;
   height: 186px;
-  margin: -136px auto 50px;
+  margin: -186px auto 0px;
   position: relative;
-  font-size: 11px; }
+  font-size: 11px;
+  overflow: hidden; }
 
 .footer__wrapper {
   width: 971px;
@@ -198,6 +200,7 @@ a {
   background-image: -webkit-linear-gradient(#c1ddeb, #daebf3);
   background-image: -moz-linear-gradient(#c1ddeb, #daebf3);
   background-image: -o-linear-gradient(#c1ddeb, #daebf3);
+  background-image: -ms-linear-gradient(#c1ddeb, #daebf3);
   background-image: linear-gradient(#c1ddeb, #daebf3);
   overflow: hidden;
   position: relative;
