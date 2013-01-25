@@ -6,7 +6,7 @@ body {
 }
 
 html{
-	background-color: #e5e5e5; 
+	background-color: #e5e5e5;
 	// нужен градиент для фона!
 }
 body{
@@ -27,10 +27,8 @@ a{
     width: 971px;
 }
 
+/* Header */
 .header{
-// 	background-color: #FFFFFF;
-//     padding: 10px;
-//     margin: 11px 0 15px;
     margin: 0 0 15px 0;
 	font-size: $font;
 	padding-top: 10px;
@@ -52,7 +50,7 @@ a{
 		}
 			.header__logo{
 				display: block;
-				text-indent: -9999px;  
+				text-indent: -9999px;
 				@include sized-sprite($icons, logotype);
 				a{
 					display: block;
@@ -83,6 +81,7 @@ a{
 
 		.header__partners{
 			float: left;
+			width: 240px;
 			margin: 9px 0 10px 28px;
 			span{
 				display: block;
@@ -95,23 +94,27 @@ a{
 		}
 
 		.header__others{
+		    float: right;
 		    margin: 14px 0 10px;
-		    overflow: hidden;
+		    text-align: right;
+		    width: 290px;
 		}
 
 			.header__user-menu{
 			    display: block;
 			    margin: 0 0 17px;
-			    text-align: right;
 			    width: 100%;
     			li{
     				list-style: none;
     				display: inline-block;
     				padding: 0 7px;
-    				position: relative; 
-	    			&:last-child{
+    				position: relative;
+    				&:last-child{
 	    				padding: 0 0 0 5px;
-	    			} 
+    				}
+	    			&:last-child:after{
+	    				content: none;
+	    			}
 	    			&:after{
 					    background-color: #D4D6D7;
 					    content: "";
@@ -136,7 +139,6 @@ a{
 			}
 
 		.main__search{
-			float: right;
 		    form {
 		    	margin: 0 0 10px;
 		    }
@@ -162,7 +164,6 @@ a{
 		    }
 
 		.main__search-menu {
-			text-align: right;
 				a{
 					padding: 0 4px;
 				}
@@ -186,7 +187,7 @@ a{
 /* Content */
 .content{
     overflow: auto;
-    padding-bottom: 196px;
+    padding-bottom: 245px;
 }
 
 	.content__holder{
@@ -197,9 +198,8 @@ a{
 /* Footer */
 .footer{
     background: url("../img/bottom-bg.png") repeat-x scroll 50% 50% transparent;
-
     height: 186px;
-    margin: -186px auto 0px;
+    margin: -206px auto 20px;
     position: relative;
     font-size: $font;
     overflow: hidden;
@@ -207,21 +207,18 @@ a{
 
 .footer__wrapper{
 		width: 971px;
-		background-color: #FFF;
 		margin: 0 auto;
-		overflow: hidden;
 }
 
 	.footer__holder{
-  		margin: 10px;
-  		overflow: hidden;
+	    border: 10px solid #FFFFFF;
 	}
 
 	.footer__main{
 		@include background-image(linear-gradient(#c1ddeb, #daebf3));
 		overflow: hidden;
 		position: relative;
-		min-height: 125px;
+		height: 125px;
 	}
 
 	.footer__info{
@@ -262,7 +259,7 @@ a{
 	    p{
 			line-height: 1.2;
 			&:last-child{
-	    		margin: 25px 0 13px; 
+	    		margin: 25px 0 13px;
 	    	}
 	    }
 	    a {
@@ -270,20 +267,21 @@ a{
 			&:hover{
 	      		text-decoration:none;
 		   	}
-		} 
+		}
 		span{
 			color: $color;
-		}   
-	}		
+		}
+	}
 
 	.footer__departments{
 		float: left;
     	margin: 8px 0 0 30px;
+    	width: 220px;
 		p{
 			color: $color;
 			line-height: 1.2;
 			margin-bottom: 10px;
-		}		
+		}
 		a {
 			color:$ca1;
 			font-size: 12px;
@@ -312,7 +310,7 @@ a{
 
 	.footer__publishers{
 		text-indent: -9999px;
-		display: inline-block;  
+		display: inline-block;
 		@include sized-sprite($icons, publishers-logo);
 		position: absolute;
 		top: 8px;
@@ -339,7 +337,7 @@ a{
 			&:last-child:after{
 					height: 31px;
 					width: 1px;
-					background-color: #333;  
+					background-color: #333;
 				    content: "";
 				    position: absolute;
 				    top: -2px;
