@@ -1,0 +1,363 @@
+@import "base";
+
+html,
+body {
+	height: 100%;
+}
+
+html{
+	background-color: #e5e5e5; 
+	// нужен градиент для фона!
+}
+body{
+	background: url(../img/top-bg.png) repeat-x 0 135px;
+	width: 100%;
+	min-width: 1000px;
+	margin: 0 auto;
+}
+
+a{
+	color: #008ae2;
+}
+
+.l-wrapper{
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+    width: 971px;
+}
+
+.header{
+	background-color: #FFFFFF;
+    padding: 10px;
+    margin: 11px 0 15px;
+	font-size: $font;
+	.header__holder{
+	    overflow: hidden;
+	    padding: 0 10px;
+	    position: relative;
+		@include background-image(linear-gradient(#e8e9e9, #fefefe));
+	}
+}
+
+		.header__logo-wrap{
+			margin: 17px 0 15px 0;
+			width: 367px;
+			display: block;
+			float: left;
+		}
+			.header__logo{
+				display: block;
+				text-indent: -9999px;  
+				@include sized-sprite($icons, logotype);
+				a{
+					display: block;
+					height: 100%;
+				}
+			}
+
+		.header__release-date{
+			margin: 10px 0 0;
+			display: block;
+		}
+
+		.header__vline{
+		    background-color: #FFFFFF;
+		    height: 100%;
+		    width: 1px;
+		    position: absolute;
+		    left: 377px;
+		}
+
+		.header__vline_second{
+		    background-color: #FFFFFF;
+		    height: 100%;
+		    width: 1px;
+		    position: absolute;
+		    left: 650px;
+		}
+
+		.header__partners{
+			float: left;
+			margin: 9px 0 10px 28px;
+			span{
+				display: block;
+				font-weight: bold;
+			}
+			img{
+				display: block;
+				margin: 8px 0 5px 0;
+			}
+		}
+
+		.header__others{
+		    margin: 14px 0 10px;
+		    overflow: hidden;
+		}
+
+			.header__user-menu{
+			    display: block;
+			    margin: 0 0 17px;
+			    text-align: right;
+			    width: 100%;
+    			li{
+    				list-style: none;
+    				display: inline-block;
+    				padding: 0 7px;
+    				position: relative; 
+	    			&:last-child{
+	    				padding: 0 0 0 5px;
+	    			} 
+	    			&:after{
+					    background-color: #D4D6D7;
+					    content: "";
+					    height: 20px;
+					    position: absolute;
+					    right: -1px;
+					    top: -2px;
+					    width: 1px;
+	    			}
+    			}
+			}
+
+			.rss{
+				margin-left: 16px;
+				&:before{
+					@include sized-sprite($icons, rss-ico);
+					position: absolute;
+					content: "";
+					left: 6px;
+   					top: 3px;
+				}
+			}
+
+		.main__search{
+			float: right;
+		    form {
+		    	margin: 0 0 10px;
+		    }
+		}
+		    .main__search-input{
+		    	font-size: $font;
+		    	color: #999;
+		    	border: 0 none;
+			    height: 28px;
+			    padding: 0 0 0 8px;
+			    width: 187px;
+			    border: 1px solid #bfbfbf;
+		    }
+		    .main__search-btn{
+		    	margin: 0 0 0 7px;
+			    color: #FFFFFF;
+			    cursor: pointer;
+			    font-size: $font;
+			    height: 29px;
+			    width: 53px;
+			    @include background-image(linear-gradient(#a02018, #C8281E));
+			    border: 1px solid #C8281E;
+		    }
+
+		.main__search-menu {
+			text-align: right;
+				a{
+					padding: 0 4px;
+				}
+				li{
+    				list-style: none;
+    				display: inline-block;
+	    			&:last-child:after{
+	    				content: none;
+	    				}
+	    			&:after{
+						    background-color: #D4D6D7;
+						    content: "";
+						    height: 20px;
+						    position: absolute;
+						    width: 1px;
+		    		}
+			}
+		}
+
+
+/* Content */
+.content{
+    overflow: auto;
+    padding-bottom: 186px;
+}
+
+	.content__holder{
+		background-color: #FFFFFF;
+		min-height: 80px;
+	}
+
+/* Footer */
+.footer{
+    background: url("../img/bottom-bg.png") repeat-x scroll 50% 50% transparent;
+    clear: both;
+    height: 186px;
+    margin: -136px auto 50px;
+    position: relative;
+    font-size: $font;
+}
+
+.footer__wrapper{
+		width: 971px;
+		background-color: #FFF;
+		margin: 0 auto;
+		overflow: hidden;
+}
+
+	.footer__holder{
+  		margin: 10px;
+  		overflow: hidden;
+	}
+
+	.footer__main{
+		@include background-image(linear-gradient(#c1ddeb, #daebf3));
+		overflow: hidden;
+		position: relative;
+		min-height: 125px;
+	}
+
+	.footer__info{
+	    float: left;
+	    margin: 5px 0 0 10px;
+	    width: 300px;
+	    h3{
+		    font-size: 17px;
+		    font-weight: normal;
+	    }
+		p{
+		    font-size: 11px;
+		    line-height: 1.1;
+		    margin: 5px 0 12px;
+		}
+	}
+
+		.footer__vline{
+		    background-color: #FFFFFF;
+		    height: 100%;
+		    width: 1px;
+		    position: absolute;
+		    left: 309px;
+		}
+
+		.footer__vline_second{
+		    background-color: #FFFFFF;
+		    height: 100%;
+		    width: 1px;
+		    position: absolute;
+		    left: 694px;
+		}
+
+	.footer__address{
+		float: left;
+	    margin: 8px 0 0 27px;
+	    width: 357px;
+	    p{
+			line-height: 1.2;
+			&:last-child{
+	    		margin: 25px 0 13px; 
+	    	}
+	    }
+	    a {
+		   color:$ca1;
+			&:hover{
+	      		text-decoration:none;
+		   	}
+		} 
+		span{
+			color: $color;
+		}   
+	}		
+
+	.footer__departments{
+		float: left;
+    	margin: 8px 0 0 30px;
+		p{
+			color: $color;
+			line-height: 1.2;
+			margin-bottom: 10px;
+		}		
+		a {
+			color:$ca1;
+			font-size: 12px;
+			&:hover{
+	      		text-decoration:none;
+		   	}
+		}
+	}
+
+	.footer__about{
+		position: relative;
+		height: 41px;
+		background-color: #000;
+		span{
+			color: #f5f5f5;
+			letter-spacing: -0.3px;
+		}
+		a{
+			color: #f5f5f5;
+			text-decoration: none;
+			&:hover{
+		    	text-decoration: underline;
+			}
+		}
+	}
+
+	.footer__publishers{
+		text-indent: -9999px;
+		display: inline-block;  
+		@include sized-sprite($icons, publishers-logo);
+		position: absolute;
+		top: 8px;
+		left: 9px;
+		a{
+			display: block;
+		    height: 100%;
+		}
+	}
+
+	.footer__copy{
+	    font-size: 12px;
+	    margin: 0 0 0 148px;
+	    position: absolute;
+	    top: 7px;
+	}
+
+	.footer__nav{
+		display: inline-block;
+		margin: 0 0 0 14px;
+		li{
+			display: inline;
+			&:before,
+			&:last-child:after{
+					height: 31px;
+					width: 1px;
+					background-color: #333;  
+				    content: "";
+				    position: absolute;
+				    top: -2px;
+			}
+		}
+		a{
+			color: #F5F5F5;
+	        font-size: 17px;
+			padding: 0 10px 0 13px;
+		    text-decoration: none;
+		}
+	}
+
+	.footer__developed-by{
+	    color: #999999;
+	    font-weight: normal;
+	    position: absolute;
+	    right: 7px;
+	    top: 7px;
+   		a{
+   			@include sized-sprite($icons, developed-by);
+			display: block;
+		    height: 100%;
+		    text-indent: -9999px;
+   		}
+    }
