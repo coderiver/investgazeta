@@ -27,24 +27,86 @@
 
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
 // img{@extend %gray;}
-body{
-	font: {
-	    family: Tahoma, "Geneva CY", sans-serif;
-	    weight: normal;
-	    size: 12px;
-	  	}
-	line-height:1.4;
+
+
+// BASE
+html,
+body {
+   height: 100%;
+   line-height:1.4;
+      font: {
+       family: Tahoma, "Geneva CY", sans-serif;
+       weight: normal;
+       size: 12px;
+      }
 }
+
+html{
+   // background: url(../img/bg.png) repeat-x;
+   background-color: #e5e5e5;
+}
+
+body{
+   background: url(../img/top-bg.png) repeat-x 0 135px;
+   width: 100%;
+   min-width: 1000px;
+   margin: 0 auto;
+}
+
+a{
+   color:#008ae2;
+   &:hover{
+      text-decoration:none;
+   }
+}
+
+
+.out{
+    margin: 0 auto;
+    min-height: 100%;
+    position: relative;
+    width: 970px;
+}
+
+
+.blocks-title{
+   color: black;
+   font-size: 18px;
+   line-height: 1.4;
+   display: inline-block;
+}
+
+
+
+.comment__ico{
+  margin: 0 10px 0 0;
+}
+
+
+.comment-ico_day-topics{
+  margin: 0 4px;
+}
+
+.comment__link{
+    color: #000;
+    text-decoration: none;
+    padding: 0 0 0 0 !important;
+    &:hover{
+      text-decoration: underline;
+    }
+}
+  .public-link {
+   background: url(../img/icons/public-link-ico.png) no-repeat 0 7px;
+  }
+
+  .private-link {
+   background: url(../img/icons/private-link-ico.png) no-repeat 0 1px;
+  }
+
 // resets
 a img,fieldset{
 	border:none;
 	}
-a{
-	color:#00919e;
-	&:hover{
-		text-decoration:none;
-	}
-}
 
 
 // common styles, these could be attached to any block with "@extend %wyswyg;"
@@ -67,7 +129,7 @@ a{
    	border-collapse: collapse;
    	width: 100%;
       td{
-         border: 1px solid #ccc;
+         border: 0px solid #ccc;
          padding: 5px;
       }
    }

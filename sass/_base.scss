@@ -7,8 +7,10 @@ $experimental-support-for-svg: true;
 // global sprites
 $icons: sprite-map("icons/*.png", $spacing: 10px);
 
-// шрифт для хэдера
-$font: 11px; 
-
+// base
+$font: 11px;
 $color: #378cb7;
 $ca1: #000;
+$link-double-border: #3fa7e9;
+$border: #d5d5d5;
+$date-time-tags: #999999;

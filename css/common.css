@@ -3,16 +3,58 @@
   padding: 0;
   -webkit-text-size-adjust: none; }
 
+html,
 body {
+  height: 100%;
+  line-height: 1.4;
   font-family: Tahoma, "Geneva CY", sans-serif;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 1.4; }
+  font-size: 12px; }
+
+html {
+  background-color: #e5e5e5; }
+
+body {
+  background: url(../img/top-bg.png) repeat-x 0 135px;
+  width: 100%;
+  min-width: 1000px;
+  margin: 0 auto; }
+
+a {
+  color: #008ae2; }
+  a:hover {
+    text-decoration: none; }
+
+.out {
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+  width: 970px; }
+
+.blocks-title {
+  color: black;
+  font-size: 18px;
+  line-height: 1.4;
+  display: inline-block; }
+
+.comment__ico {
+  margin: 0 10px 0 0; }
+
+.comment-ico_day-topics {
+  margin: 0 4px; }
+
+.comment__link {
+  color: #000;
+  text-decoration: none;
+  padding: 0 0 0 0 !important; }
+  .comment__link:hover {
+    text-decoration: underline; }
+
+.public-link {
+  background: url(../img/icons/public-link-ico.png) no-repeat 0 7px; }
+
+.private-link {
+  background: url(../img/icons/private-link-ico.png) no-repeat 0 1px; }
 
 a img, fieldset {
   border: none; }
-
-a {
-  color: #00919e; }
-  a:hover {
-    text-decoration: none; }

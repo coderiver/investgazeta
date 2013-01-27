@@ -1,31 +1,5 @@
 @import "base";
 
-html,
-body {
-	height: 100%;
-}
-
-html{
-	background-color: #e5e5e5;
-	// нужен градиент для фона!
-}
-body{
-	background: url(../img/top-bg.png) repeat-x 0 135px;
-	width: 100%;
-	min-width: 1000px;
-	margin: 0 auto;
-}
-
-a{
-	color: #008ae2;
-}
-
-.p-wrapper{
-    margin: 0 auto;
-    min-height: 100%;
-    position: relative;
-    width: 971px;
-}
 
 /* Header */
 .header{
@@ -184,10 +158,60 @@ a{
 		}
 
 
-/* Layout*/
-.layout{
-    overflow: auto;
-    padding-bottom: 245px;
+/* Classifieds */
+.classifieds{
+	background-color: #fff;
+	padding: 0 10px 10px;
+	margin-bottom: 1em;
+	li{
+		display: inline-block;
+		margin: 20px 28px 0 0;
+		width: 164px;
+		&:last-child{
+			margin: 20px 0 0;
+		}
+		h2{
+			margin-bottom: 20px;
+		}
+	}
+}
+	.classifieds__block{
+	    border: 1px solid $border;
+	    display: block;
+	    height: 112px;
+	    overflow: hidden;
+	    position: relative;
+	    width: 164px;
+	}
+
+	.classifieds__description{
+	    background:url(../img/bg_black.png);
+	    bottom: 0;
+	    color: white;
+	    padding: 6px;
+	    font-size: $font;
+	    line-height: 1.2;
+	    position: absolute;
+	    right: 0;
+	    width: 152px;
+	}
+
+/* Main menu bottom */
+.main__nav{
+	font-size: 12px;
+	padding: 1em 0;
+	a{
+		color: black;
+		text-decoration: none;
+		border-right:1px solid #b7b7b7;
+		padding:7px;
+		&:first-child{
+			border-left:1px solid #b7b7b7;
+		}
+		&:hover{
+			text-decoration: underline;
+		}
+	}
 }
 
 /* Footer */
@@ -225,7 +249,6 @@ a{
 		    font-weight: normal;
 	    }
 		p{
-		    font-size: 11px;
 		    line-height: 1.1;
 		    margin: 5px 0 12px;
 		}

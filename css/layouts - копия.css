@@ -1,3 +1,25 @@
+html,
+body {
+  height: 100%; }
+
+html {
+  background-color: #e5e5e5; }
+
+body {
+  background: url(../img/top-bg.png) repeat-x 0 135px;
+  width: 100%;
+  min-width: 1000px;
+  margin: 0 auto; }
+
+a {
+  color: #008ae2; }
+
+.out {
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+  width: 970px; }
+
 /* default layout */
 .l {
   width: 100%;
