@@ -42,8 +42,8 @@ body {
 }
 
 html{
-   // background: url(../img/bg.png) repeat-x;
    background-color: #e5e5e5;
+   //@include background-image(linear-gradient(#e5e5e5 0%, #ffffff 50%, #e5e5e5 100%));
 }
 
 body{
